@@ -10,14 +10,14 @@ function colocarNome(){
     colocar_nomes();
 }
 
-function tirarNome(){
-    convidados.pop();
-    colocar_nomes();
-}
-
 function colocar_nomes(){
     ul.innerHTML = "";
     for(let x=0; x < convidados.length; x++){
         ul.innerHTML += `<li> ${convidados[x]} </li>`;
     }
+}
+
+function tirarNome(){
+    convidados.pop();
+    colocar_nomes();
 }
